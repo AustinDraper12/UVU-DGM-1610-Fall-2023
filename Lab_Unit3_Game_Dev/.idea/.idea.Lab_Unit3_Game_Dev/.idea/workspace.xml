@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2b35059d-78f1-4b90-8225-2e56d989270e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab_Unit3_Game_Dev/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab_Unit3_Game_Dev/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movment.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1696001936600</updated>
       <workItem from="1696001939872" duration="24000" />
-      <workItem from="1696002009465" duration="6835000" />
+      <workItem from="1696002009465" duration="8053000" />
     </task>
     <servers />
   </component>
@@ -108,26 +109,26 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Movment.cs</url>
-          <line>31</line>
+          <line>32</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Movment.cs" initialLine="31" containingFunctionPresentation="Method 'Update'">
             <startOffsets>
-              <option value="828" />
+              <option value="854" />
             </startOffsets>
             <endOffsets>
-              <option value="873" />
+              <option value="899" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Movment.cs</url>
-          <line>46</line>
+          <line>48</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Movment.cs" initialLine="36" containingFunctionPresentation="Method 'Update'">
             <startOffsets>
-              <option value="1317" />
+              <option value="1392" />
             </startOffsets>
             <endOffsets>
-              <option value="1318" />
+              <option value="1393" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />

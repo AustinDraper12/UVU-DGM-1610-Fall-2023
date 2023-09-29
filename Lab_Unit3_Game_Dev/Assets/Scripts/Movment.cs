@@ -12,7 +12,7 @@ public class Movment : MonoBehaviour
     private Vector3 moveDirection;
     private bool isJumping;
 
-    public bool IsJumping => isJumping;
+    
 
     // Start is called before the first frame update
     void Start()
