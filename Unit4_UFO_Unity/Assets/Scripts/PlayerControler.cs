@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerControler : MonoBehaviour
 {
     private float moveSpeed = 5f;
+    private float xAxisDistance = 11f;
+    public Transform Blaster;
+    public GameObject Lazer;
     
     // Start is called before the first frame update
     void Start()
@@ -26,16 +29,21 @@ public class PlayerControler : MonoBehaviour
                 transform.Translate(-Vector3.up * moveSpeed * Time.deltaTime);
         }
 
-        if (transform.position.x > -11)
+        if (transform.position.x > - xAxisDistance)
         {
             if (Input.GetKey(KeyCode.LeftArrow))
                 transform.Translate(-Vector3.right * moveSpeed * Time.deltaTime);
         }
 
-        if (transform.position.x < 11)
+        if (transform.position.x <  xAxisDistance)
         {
             if (Input.GetKey(KeyCode.RightArrow))
                 transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(Lazer, Blaster.transform.position, Lazer.transform.rotation);
         }
     }
 }
