@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class DestroyOut : MonoBehaviour
 {
-    public float upperBound = 7f;
-    public float lowerBound = -6f;
+    public float upperBound = 8f;
+    public float lowerBound = -7f;
+    public GameObject Coin;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +22,17 @@ public class DestroyOut : MonoBehaviour
         }
         else if (transform.position.y < lowerBound)
         {
-            Debug.Log("Game Over");
-            Destroy(gameObject);
-            //Time.timeScale = 0;
+            if (gameObject == Coin)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                Debug.Log("Game Over");
+                Destroy(gameObject);
+                //Time.timeScale = 0;  
+            }
+           
         }
     }
 }

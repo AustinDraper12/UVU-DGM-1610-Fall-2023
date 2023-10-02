@@ -9,11 +9,12 @@ public class PlayerControler : MonoBehaviour
     private float xAxisDistance = 11f;
     public Transform Blaster;
     public GameObject Lazer;
-    
+    public GameObject Coin;
+    private float coins = 0f;
     // Start is called before the first frame update
     void Start()
     {
-        
+        coins = 0;
     }
 
     // Update is called once per frame
@@ -50,6 +51,11 @@ public class PlayerControler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject == Coin)
+        {
+            coins += 1;
+        }
+        Debug.Log("coins");
         Destroy(other.gameObject);
     }
 }
