@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LazerMovement : MonoBehaviour
 {
-    public float speedLazer = 5f;
+    public float speedLazer = 6f;
     // Start is called before the first frame update
     void Start()
     {
