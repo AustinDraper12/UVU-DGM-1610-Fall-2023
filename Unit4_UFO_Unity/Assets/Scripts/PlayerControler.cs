@@ -49,8 +49,9 @@ public class PlayerControler : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
+        
         if (other.gameObject == Coin)
         {
             coins += 1;

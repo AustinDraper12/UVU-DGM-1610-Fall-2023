@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class coinMovement : MonoBehaviour
 {
+    public GameObject Player;
     public float speedLazer = 4f;
+    private float coins = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +17,15 @@ public class coinMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * speedLazer * Time.deltaTime);
+    }
+    public void OnTriggerEnter(Collider Player)
+    {
+        if (gameObject == this.Player)
+        {
+            coins += 1;
+        }
+        Debug.Log("coins");
+        Destroy(gameObject);
+        
     }
 }
