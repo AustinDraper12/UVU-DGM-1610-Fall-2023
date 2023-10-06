@@ -18,14 +18,5 @@ public class coinMovement : MonoBehaviour
     {
         transform.Translate(Vector3.forward * speedLazer * Time.deltaTime);
     }
-    public void OnTriggerEnter(Collider Player)
-    {
-        if (gameObject == this.Player)
-        {
-            coins += 1;
-        }
-        Debug.Log("coins");
-        Destroy(gameObject);
-        
-    }
+    
 }

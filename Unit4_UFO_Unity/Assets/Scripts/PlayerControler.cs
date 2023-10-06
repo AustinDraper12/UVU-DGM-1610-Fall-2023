@@ -49,14 +49,15 @@ public class PlayerControler : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         
-        if (other.gameObject == Coin)
+        if (other.tag == "Respawn")
         {
             coins += 1;
+            Debug.Log(coins);
+            Destroy(other.gameObject);
         }
-        Debug.Log("coins");
-        Destroy(other.gameObject);
+
     }
 }

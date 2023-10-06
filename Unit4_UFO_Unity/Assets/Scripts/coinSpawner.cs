@@ -19,15 +19,15 @@ public class coinSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // returns a random number between -10 and 10
+        
          timer += Time.deltaTime;
-            if (timer > delay)
-            {
-                float randomNumber = Random.Range(-10, 10);
-                transform.position = new Vector3(randomNumber, upperBound - 1, 0f);
-                Instantiate(Coin, CoinSpawner.transform.position, Coin.transform.rotation);
-                timer -= delay;
-            }
+         if (timer > delay)
+         {
+             float randomNumber = Random.Range(-10, 10);
+             transform.position = new Vector3(randomNumber, upperBound - 1, 0f);
+             Instantiate(Coin, CoinSpawner.transform.position, Coin.transform.rotation);
+             timer -= delay;
+         }
         
     }
 }
