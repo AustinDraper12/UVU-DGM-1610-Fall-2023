@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayerControler : MonoBehaviour
 {
-    private float moveSpeed = 5f;
-    private float xAxisDistance = 11f;
+    private float moveSpeed = 7f;
+    private float xAxisDistance = 10f;
     public Transform Blaster;
     public GameObject Lazer;
     public GameObject Coin;
@@ -20,7 +20,7 @@ public class PlayerControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < 5)
+        if (transform.position.y < 4)
         {
         if (Input.GetKey(KeyCode.UpArrow))
             transform.Translate(Vector3.up * moveSpeed * Time.deltaTime);

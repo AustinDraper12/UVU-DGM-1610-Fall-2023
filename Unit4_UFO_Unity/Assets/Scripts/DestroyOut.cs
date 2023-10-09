@@ -10,7 +10,7 @@ public class DestroyOut : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Time.timeScale = 1;
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -30,7 +30,7 @@ public class DestroyOut : MonoBehaviour
             {
                 Debug.Log("Game Over");
                 Destroy(gameObject);
-                //Time.timeScale = 0;  
+                Time.timeScale = 0;  
             }
            
         }

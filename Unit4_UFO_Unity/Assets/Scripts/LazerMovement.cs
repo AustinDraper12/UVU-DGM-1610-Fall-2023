@@ -16,4 +16,15 @@ public class LazerMovement : MonoBehaviour
     {
         transform.Translate(Vector3.up * speedLazer * Time.deltaTime);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        
+        if (other.tag == "Finish")
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+
+    }
 }
+
