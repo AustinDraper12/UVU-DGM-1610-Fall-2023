@@ -123,6 +123,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedLazer: 6
+  scoreManager: {fileID: 0}
+  scoreToGive: 10
 --- !u!114 &1252329133385158165
 MonoBehaviour:
   m_ObjectHideFlags: 0
