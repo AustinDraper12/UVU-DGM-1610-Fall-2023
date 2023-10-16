@@ -11,10 +11,13 @@ public class PlayerControler : MonoBehaviour
     public GameObject Lazer;
     public GameObject Coin;
     private float coins = 0f;
+
+    public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
         coins = 0;
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -43,7 +46,7 @@ public class PlayerControler : MonoBehaviour
                 transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && gameManager.isGameOver == false)
         {
             Instantiate(Lazer, Blaster.transform.position, Lazer.transform.rotation);
         }
