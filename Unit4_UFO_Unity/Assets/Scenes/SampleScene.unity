@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 413168990}
   - component: {fileID: 413168989}
   m_Layer: 5
-  m_Name: GameOverText
+  m_Name: gameOverText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -873,6 +873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGameOver: 0
+  gameOverText: {fileID: 413168987}
 --- !u!4 &974401729
 Transform:
   m_ObjectHideFlags: 0
@@ -923,7 +924,7 @@ MonoBehaviour:
   - {fileID: 6151974799865556493, guid: 74a11c20c40d0463db38d625a589f4ed, type: 3}
   enemySpawner: {fileID: 1176208484}
   upperBound: 8
-  delay: 3
+  delay: 1.5
 --- !u!4 &1176208484
 Transform:
   m_ObjectHideFlags: 0

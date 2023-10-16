@@ -163,3 +163,4 @@ MonoBehaviour:
   upperBound: 8
   lowerBound: -7
   Coin: {fileID: 0}
+  gameisover: {fileID: 0}

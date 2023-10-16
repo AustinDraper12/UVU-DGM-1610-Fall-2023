@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d204d7700ad0416284f1ba93730a744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 3.5
 --- !u!54 &-5035222842074991709
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -163,3 +163,4 @@ MonoBehaviour:
   upperBound: 8
   lowerBound: -7
   Coin: {fileID: 0}
+  gameisover: {fileID: 0}

@@ -7,6 +7,9 @@ public class DestroyOut : MonoBehaviour
     public float upperBound = 8f;
     public float lowerBound = -7f;
     public GameObject Coin;
+    public GameManager gameisover;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -29,8 +32,11 @@ public class DestroyOut : MonoBehaviour
             else
             {
                 Debug.Log("Game Over");
+                gameisover = FindObjectOfType<GameManager>();
+                gameisover.isGameOver = true;
                 Destroy(gameObject);
-                Time.timeScale = 0;  
+
+                //Time.timeScale = 0;  
             }
            
         }
