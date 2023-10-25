@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 
 [CreateAssetMenu(fileName = "New Float Data", menuName = "Float Data")]
-public class FloatData : MonoBehaviour
+public class FloatData : ScriptableObject
 {
      [SerializeField] private float value;
      

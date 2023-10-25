@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Int Data", menuName = "Int Data")]
-public class IntData : MonoBehaviour
+public class IntData : ScriptableObject
 {
     [SerializeField] private int value;
 
