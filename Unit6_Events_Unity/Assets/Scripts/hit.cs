@@ -7,14 +7,15 @@ public class hit : MonoBehaviour
 {
     public UnityEvent triggerEnterEvent;
     // Start is called before the first frame update
+    public GameObject Player;
     public void OnTriggerEnter(Collider other)
     {
-        triggerEnterEvent.Invoke();
+        if (other.CompareTag("good"))
+        {
+            triggerEnterEvent.Invoke();
+            Debug.Log("cheese");
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

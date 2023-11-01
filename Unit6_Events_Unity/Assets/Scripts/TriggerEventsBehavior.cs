@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class TriggerEventsBehavior : MonoBehaviour
 {
     public UnityEvent triggerEnterEvent;
-   
     private Collider colliderObj;
    
     private void Start()
@@ -17,8 +16,7 @@ public class TriggerEventsBehavior : MonoBehaviour
    
     private void OnTriggerEnter(Collider other)
     {
-        triggerEnterEvent.Invoke();
-        Debug.Log("cheese");
+            triggerEnterEvent.Invoke();
     }
 }
 
