@@ -7,10 +7,13 @@ using UnityEngine.Events;
 public class Match : MonoBehaviour
 {
     public ID idObj;
-    public UnityEvent matchEvent, noMatchEvent;
-    private void OnTriggerEnter(Collider other)
+    public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
+    private IEnumerator OnTriggerEnter(Collider other)
     {
-        var otherID = other.GetComponent<IDContainer>().idObj;
+        var tempObj = other.GetComponent<IDContainer>();
+        if (tempObj == null)
+            yield break;
+        var otherID = tempObj.idObj;
         if (otherID == idObj)
         {
             matchEvent.Invoke();
@@ -18,6 +21,9 @@ public class Match : MonoBehaviour
         else
         {
             noMatchEvent.Invoke();
+            yield return new WaitForSeconds(0.5f);
+            noMatchDelayedEvent.Invoke();
+
         }
         
     }

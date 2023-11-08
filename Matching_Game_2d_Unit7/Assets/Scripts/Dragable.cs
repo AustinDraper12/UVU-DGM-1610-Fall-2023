@@ -10,7 +10,7 @@ public class Dragable : MonoBehaviour
 
     public bool dragable;
 
-    public Vector3 position, offset;
+    public Vector2 position, offset;
 
     public UnityEvent StartDrag, EndDrag;
     // Start is called before the first frame update
@@ -23,6 +23,7 @@ public class Dragable : MonoBehaviour
     {
         offset = transform.position - cameraObj.ScreenToWorldPoint(Input.mousePosition);
         StartDrag.Invoke();
+        yield return new WaitForFixedUpdate();
         dragable = true;
         yield return new WaitForFixedUpdate();
         
@@ -30,7 +31,7 @@ public class Dragable : MonoBehaviour
         while (dragable)
         {
             yield return new WaitForFixedUpdate();
-            position = cameraObj.ScreenToViewportPoint(Input.mousePosition) + offset;
+            position = cameraObj.ScreenToViewportPoint(Input.mousePosition);
             transform.position = position;
         }
     }
