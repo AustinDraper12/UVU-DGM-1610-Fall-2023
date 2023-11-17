@@ -123,6 +123,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &235567240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9119186443560578489, guid: eba21a29fef27442a8865ff17e3e14d0, type: 3}
+  m_PrefabInstance: {fileID: 1866948261852787921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &235567242 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 274473199524118145, guid: eba21a29fef27442a8865ff17e3e14d0, type: 3}
+  m_PrefabInstance: {fileID: 1866948261852787921}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235567240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4405610cbf494499a4a3a18fa702394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &235567248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235567240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d3bcf7527d5420f929182ad443c03b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 0}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 235567242}
+        m_TargetAssemblyTypeName: SpriteColor, Assembly-CSharp
+        m_MethodName: ChangeRenderColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 53fbc50112ff24b1e9dfba9e62082c70, type: 2}
+          m_ObjectArgumentAssemblyTypeName: colorID, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &516455974
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,6 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 516455976}
   - component: {fileID: 516455975}
+  - component: {fileID: 516455977}
   m_Layer: 0
   m_Name: IntstancerGO
   m_TagString: Untagged
@@ -192,7 +237,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  counterNum: {fileID: 0}
+  counterNum: {fileID: 11400000, guid: 28872d1b22b514e1583bec7e46d3f9e6, type: 2}
   seconds: 3
 --- !u!4 &516455976
 Transform:
@@ -209,6 +254,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &516455977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516455974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d3bcf7527d5420f929182ad443c03b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 11400000, guid: 53fbc50112ff24b1e9dfba9e62082c70, type: 2}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2067465852
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,14 +414,34 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2448038455244277807, guid: eba21a29fef27442a8865ff17e3e14d0, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: f9a3047e2ea12495ab8b21b73179a0b7, type: 2}
+    - target: {fileID: 5830287403966491009, guid: eba21a29fef27442a8865ff17e3e14d0, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830287403966491009, guid: eba21a29fef27442a8865ff17e3e14d0, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830287403966491009, guid: eba21a29fef27442a8865ff17e3e14d0, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9119186443560578489, guid: eba21a29fef27442a8865ff17e3e14d0, type: 3}
       propertyPath: m_Name
       value: Circle
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2448038455244277807, guid: eba21a29fef27442a8865ff17e3e14d0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9119186443560578489, guid: eba21a29fef27442a8865ff17e3e14d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 235567248}
   m_SourcePrefab: {fileID: 100100000, guid: eba21a29fef27442a8865ff17e3e14d0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -436,7 +436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1beaf0bd860a4a918f9067bd63b6219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canRun: 0
+  canRun: 1
   startEvent:
     m_PersistentCalls:
       m_Calls:
@@ -657,7 +657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd9ea9fe4756a4c3e8892baa338bc3e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scores: 0
+  scores: 3
   startEvent:
     m_PersistentCalls:
       m_Calls: []
