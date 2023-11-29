@@ -8,7 +8,7 @@ public class CoroutineB : MonoBehaviour
     public bool canRun;
     public UnityEvent startEvent, startCountEvent, repeatEvent, endEvent, repeatUntilFalseEvent;
     public IntData counterNum;
-    public float seconds = 3.0f;
+    public float seconds = 1.0f;
     private WaitForSeconds wfsObj;
     private WaitForFixedUpdate wffuObj;
 
@@ -44,6 +44,10 @@ public class CoroutineB : MonoBehaviour
     {
         canRun = true;
         StartCoroutine(RepeatUntilFalse());
+    }
+    public void stopRepeat()
+    {
+        canRun = false;
     }
 
     IEnumerator RepeatUntilFalse()

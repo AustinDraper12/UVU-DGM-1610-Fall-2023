@@ -88,6 +88,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9119186443560578489, guid: eba21a29fef27442a8865ff17e3e14d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: -1515943140742176526}
+    - targetCorrespondingSourceObject: {fileID: 9119186443560578489, guid: eba21a29fef27442a8865ff17e3e14d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -542028570698046673}
   m_SourcePrefab: {fileID: 100100000, guid: eba21a29fef27442a8865ff17e3e14d0, type: 3}
 --- !u!1 &5290097992597789747 stripped
 GameObject:
@@ -153,3 +156,24 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   colorIDDataListObj: {fileID: 11400000, guid: 8ffa98b4df2594b99a163865ee0ef434, type: 2}
+--- !u!114 &-542028570698046673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5290097992597789747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9201738b16bf740c4a6c009797850013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragable: 0
+  position: {x: 0, y: 0}
+  offset: {x: 0, y: 0}
+  StartDrag:
+    m_PersistentCalls:
+      m_Calls: []
+  EndDrag:
+    m_PersistentCalls:
+      m_Calls: []

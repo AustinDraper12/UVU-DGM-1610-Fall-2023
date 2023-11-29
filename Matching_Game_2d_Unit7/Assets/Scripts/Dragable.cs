@@ -21,7 +21,7 @@ public class Dragable : MonoBehaviour
 
     public IEnumerator OnMouseDown()
     {
-        offset = transform.position - cameraObj.ScreenToWorldPoint(Input.mousePosition);
+        offset = (transform.position - cameraObj.ScreenToWorldPoint(Input.mousePosition));
         StartDrag.Invoke();
         yield return new WaitForFixedUpdate();
         dragable = true;
