@@ -14,5 +14,11 @@ public class Destroybeh : MonoBehaviour
         yield return wfsObj;
         Destroy(gameObject);
     }
+    
+    public void DestroyObject()
+    {
+        Destroy(gameObject);
+    }
+    
 
 }

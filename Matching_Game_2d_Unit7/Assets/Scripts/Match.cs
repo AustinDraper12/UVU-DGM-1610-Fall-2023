@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 public class Match : MonoBehaviour
 {
+    public ColorIDDataList colorIDDataListObj;
     public ID idObj;
     public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
     private IEnumerator OnTriggerEnter(Collider other)
@@ -26,5 +27,10 @@ public class Match : MonoBehaviour
 
         }
         
+    }
+
+    public void ChangeColorID()
+    {
+        idObj = colorIDDataListObj.currentColor;
     }
 }

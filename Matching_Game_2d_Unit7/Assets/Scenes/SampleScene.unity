@@ -1417,6 +1417,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1901101229}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Start
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1052669281}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
@@ -1706,6 +1718,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2000939008}
+        m_TargetAssemblyTypeName: SpriteColor, Assembly-CSharp
+        m_MethodName: ChangeRenderColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 72a9c91dc1387488cb660fcfc34d5e49, type: 2}
+          m_ObjectArgumentAssemblyTypeName: colorID, Assembly-CSharp
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   repeatEvent:
     m_PersistentCalls:
       m_Calls:
@@ -1787,6 +1811,30 @@ MonoBehaviour:
       - m_Target: {fileID: 585735161}
         m_TargetAssemblyTypeName: CoroutineB, Assembly-CSharp
         m_MethodName: startRepeat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Offs
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000939008}
+        m_TargetAssemblyTypeName: SpriteColor, Assembly-CSharp
+        m_MethodName: ChangeRenderColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: b0b5a00d82e2a4073b400fcd3e02024e, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ColorIDDataList, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Offs
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000939003}
+        m_TargetAssemblyTypeName: Match, Assembly-CSharp
+        m_MethodName: ChangeColorID
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2221,7 +2269,6 @@ GameObject:
   - component: {fileID: 2000939012}
   - component: {fileID: 2000939011}
   - component: {fileID: 2000939014}
-  - component: {fileID: 2000939015}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2241,7 +2288,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5be0c0fb2c4004f97ac86074ff8633ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idObj: {fileID: 11400000, guid: 53fbc50112ff24b1e9dfba9e62082c70, type: 2}
+  colorIDDataListObj: {fileID: 11400000, guid: b0b5a00d82e2a4073b400fcd3e02024e, type: 2}
+  idObj: {fileID: 11400000, guid: f9a3047e2ea12495ab8b21b73179a0b7, type: 2}
   matchEvent:
     m_PersistentCalls:
       m_Calls:
@@ -2300,6 +2348,30 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: b0b5a00d82e2a4073b400fcd3e02024e, type: 2}
           m_ObjectArgumentAssemblyTypeName: ColorIDDataList, Assembly-CSharp
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000939003}
+        m_TargetAssemblyTypeName: Match, Assembly-CSharp
+        m_MethodName: ChangeColorID
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: b0b5a00d82e2a4073b400fcd3e02024e, type: 2}
+        m_TargetAssemblyTypeName: ColorIDDataList, Assembly-CSharp
+        m_MethodName: SetCurrentColorRandom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2559,8 +2631,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragable: 0
-  position: {x: 0, y: 0}
-  offset: {x: 0, y: 0}
+  position: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0, z: 0}
   StartDrag:
     m_PersistentCalls:
       m_Calls:
@@ -2924,47 +2996,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14bf9bc0323cd40c8aa2bcb9a990b95e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2000939015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2000939002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7026c8c9bfe6a4d3099c08ce30efbd4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idObj: {fileID: 0}
-  startEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: 8ffa98b4df2594b99a163865ee0ef434, type: 2}
-        m_TargetAssemblyTypeName: ColorIDDataList, Assembly-CSharp
-        m_MethodName: SetCurrentColorRandom
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2000939008}
-        m_TargetAssemblyTypeName: SpriteColor, Assembly-CSharp
-        m_MethodName: ChangeRenderColor
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 8ffa98b4df2594b99a163865ee0ef434, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ColorIDDataList, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  colorIDDataListObj: {fileID: 11400000, guid: 8ffa98b4df2594b99a163865ee0ef434, type: 2}
 --- !u!1 &2034502523
 GameObject:
   m_ObjectHideFlags: 0
